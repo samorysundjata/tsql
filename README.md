@@ -1,5 +1,7 @@
 # T-SQL: Laço para Popular Tabela Associativa
 
+[![T-SQL](https://img.shields.io/badge/SQL-T--SQL-blue)](https://docs.microsoft.com/en-us/sql/t-sql/language-reference)
+
 Publicado em julho 28, 2024 por Samory Sundjata
 
 Uma tabela associativa implementa relacionamentos muitos-para-muitos entre tabelas/classes, armazenando pares de chaves estrangeiras. Veja como usar um laço para popular tabela associativa em T-SQL.
@@ -7,10 +9,6 @@ Uma tabela associativa implementa relacionamentos muitos-para-muitos entre tabel
 ## O que é T-SQL?
 
 Transact-SQL é uma extensão proprietária da Microsoft para SQL, que adiciona recursos como programação procedural, variáveis locais e manipulação de exceções, sendo usada para gerenciar e consultar dados em bancos de dados SQL Server.
-
-## O que é uma Tabela Associativa?
-
-Primordialmente, uma tabela associativa, no contexto do Modelo Relacional e Orientação a Objetos, é uma estrutura que implementa relacionamentos muitos-para-muitos entre duas tabelas ou classes, armazenando pares de chaves estrangeiras que referenciam as entidades relacionadas. É quando você tem duas classes e uma contém uma lista da outra.
 
 ## Exemplo de Tabelas
 
@@ -54,16 +52,7 @@ Primordialmente, uma tabela associativa, no contexto do Modelo Relacional e Orie
 | 1 | 102 |
 | 2 | 101 |
 
-### Explicação:
-
-- Alice (EstudanteID 1) está matriculada nos cursos de Matemática (CursoID 101) e Literatura (CursoID 102).
-- Beto (EstudanteID 2) está matriculado apenas no curso de Matemática (CursoID 101).
-
-Como resultado, a tabela EstudantesCursos associa estudantes a cursos, permitindo o gerenciamento do relacionamento muitos-para-muitos entre as duas entidades.
-
 ## Laço para Popular a Tabela Associativa
-
-O laço `WHILE` em T-SQL mostrado realiza a inserção de registros em uma tabela associativa chamada `TABELAMAIOR_TABELAMENOR`, para criar um relacionamento entre `TABELAMAIOR` e `TABELAMENOR`.
 
 ```sql
 DECLARE @counter INT = (SELECT TOP 1 ID_TABELAMAIOR FROM TABELAMAIOR);
