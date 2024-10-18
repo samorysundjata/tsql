@@ -1,7 +1,7 @@
 # T-SQL: Laço para Popular Tabela Associativa
 
 [![T-SQL](https://img.shields.io/badge/SQL-T--SQL-blue)](https://docs.microsoft.com/en-us/sql/t-sql/language-reference)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
+![SQL Server 2019](https://img.shields.io/badge/SQL%20Server-2019-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
 ![Loops](https://img.shields.io/badge/Loops-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
 
 Publicado em julho 28, 2024 por Samory Sundjata
